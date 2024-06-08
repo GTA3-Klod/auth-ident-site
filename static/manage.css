@@ -1,0 +1,70 @@
+body {
+    background-color: #bafff5;
+    font-family: "Oswald", sans-serif;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+input {
+    font-size: 20px;
+    width: 17em;
+    height: 2em;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 1px 1px rgba(0, 0, 255, .2);
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+.button {
+    width: 200px;
+    background-color: #2bfc8d;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.button:hover {
+    background: yellow;
+    transition: background-color 0.5s;
+}
+
+.button:active {
+    background-color: #2e7031; /* колір при натисканні */
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.get-form {
+    text-align: center;
+    background-color: #9ec6ff;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: -15px;
+}
+
+#access_level {
+    font-size: 20px;
+}

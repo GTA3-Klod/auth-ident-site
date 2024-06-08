@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Identification</title>
+  </head>
+  <body>
+    <div class="form">
+      <h1>Identify yourself</h1>
+      <form action="/login" method="post" class="get-form">
+        <div class="get-form">
+          <label for="Login">Login: </label>
+          <input type="text" id="Login" name="username" required/>
+        </div>
+        <div class="get-form">
+          <label for="Password">Password: </label>
+          <input type="password" id="password" name="password" required/>
+        </div>
+        <div class="get-form">
+            <input class="button" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

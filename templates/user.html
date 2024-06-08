@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/user.css">
+    <title>My account</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Welcome, {{ session.username }}</h1>
+        <div class="get-form">
+            <p>You are successfully logged in.</p>
+        </div>
+        
+    </div>
+
+    <!-- Додайте форму для вибору питань -->
+    <form action="/set_auth_questions" method="post">
+        <div class="question1">
+            <label for="question1">Question 1:</label>
+        <select name="question1" id="question1">
+            {% for question in questions %}
+            <option value="{{ question }}">{{ question }}</option>
+            {% endfor %}
+        </select>
+        </div>
+        <div class="question2">
+            <label for="question2">Question 2:</label>
+        <select name="question2" id="question2">
+            {% for question in questions %}
+            <option value="{{ question }}">{{ question }}</option>
+            {% endfor %}
+        </select>
+        </div>
+        <div class="question3">
+            <label for="question3">Question 3:</label>
+        <select name="question3" id="question3">
+            {% for question in questions %}
+            <option value="{{ question }}">{{ question }}</option>
+            {% endfor %}
+        </select>
+        </div>
+        
+        <input class="button" type="submit" value="Save Questions">
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>

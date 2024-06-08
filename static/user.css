@@ -1,0 +1,50 @@
+body {
+    background-color: #bafff5;
+    font-family: "Oswald", sans-serif;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    width: 200px;
+    background-color: #2bfc8d;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin-top: 10px;
+}
+
+a:hover {
+    background: yellow;
+    transition: background-color 0.5s;
+}
+
+a:active {
+    background-color: #2e7031; /* колір при натисканні */
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    width: 200px;
+    background-color: #2bfc8d;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: yellow;
+    transition: background-color 0.5s;
+}
+
+.button:active {
+    background-color: #2e7031; /* колір при натисканні */
+    color: white;
+}

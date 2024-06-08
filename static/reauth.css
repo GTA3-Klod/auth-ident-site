@@ -1,0 +1,57 @@
+body {
+    background-color: #bafff5;
+    font-family: "Oswald", sans-serif;
+}
+
+.button {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    width: 200px;
+    background-color: #2bfc8d;
+    border-radius: 10px;
+    border: solid black 1px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 1px 1px rgba(0, 0, 255, .2);
+}
+
+.button:hover {
+    background: yellow;
+    transition: background-color 0.5s;
+}
+
+.button:active {
+    background-color: #2e7031; /* колір при натисканні */
+    color: white;
+}
+
+.form {
+    margin: 0 auto;
+    background-color: #9ec6ff;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.input {
+    font-size: 20px;
+    width: 17em;
+    height: 2em;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 1px 1px rgba(0, 0, 255, .2);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
